@@ -1,0 +1,43 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+          <!-- VENTANA3 (NUEVA ENCUESTA) -->
+        <div data-role="page" id="nuevaEncuesta">
+            <div data-role="header">
+                <h1>NUEVA ENCUESTA</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <font color="BLACK"><p><b>CONTENIDO</b></p></font>
+                <img src="./img/usuario1.png" class="imagenNuevaEncuesta">
+                <form method="post" action="demoform.asp">
+                      <div class="ui-field-contain">
+                        <label for="nombre"><b>Nombre:</b></label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre..."> 
+
+                        <label for="cargo:"><b>Cargo:</b></label>
+                        <input type="text" name="cargo" id="cargo" placeholder="Tu cargo...">
+
+                        <label for="departamento"><b>Departamento:</b></label>
+                        <input type="text" name="departamento" id="departamento" placeholder="Tu departamento...">
+
+                         <label for="responsabilidades"><b>Responsabilidades:</b></label>
+                        <input type="text" name="responsabilidades" id="responsabilidades" placeholder="Tus responsabilidades...">
+                      </div><br>
+
+                      <fieldset data-role="controlgroup">
+                             <label for="gmail">Gmail</label>
+                             <input type="checkbox" name="gmail" id="gmail" value="gmail">
+
+                            <label for="twitter">Twitter</label>
+                            <input type="checkbox" name="twitter" id="twitter" value="twitter">
+                    </fieldset>
+
+                <input type="submit" value="Guardar">
+                <a href= "contactos.html">Volver a contactos</a>
+            </div>
+        </div>
+    </body>
+</html>
+ 
