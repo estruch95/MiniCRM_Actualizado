@@ -45,11 +45,8 @@ var cargarDB = {
                         //Aquí actualizaría mi html automáticamente para cargar datos de la BBDD
                         console.log("ROW "+i+" nombre: "+fila.nombre);
                         //REVISAR LA RECUPERACIÓN DE DATOS (ALGO FALLA)
-                        //c"<li><a href='./alumnos/ivan.html'><img src='./img/usuario'+i'.png' class='imagenLista'><div class='nombreLista'>"+fila.nombre+"</div><div class='profesionLista'>"+fila.cargo+"</div></a></li>").listview('refresh');
-                        //$("#listaContactos li").append("<li><a href='./alumnos/joaquin.html'><img src='./img/usuario2.png' class='imagenLista'><div class='nombreLista'>"+fila.nombre+"</div><div class='profesionLista'>Alumno</div></a></li>");
-                        $("#listaContactos ul").append("<li>"+i+"</li>").listview('refresh');
+                        
                     }
-                    console.log("LLEGO");
                 }
             },
             //Función de error

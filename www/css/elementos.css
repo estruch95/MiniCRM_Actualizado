@@ -1,24 +1,24 @@
 /* Mis deficiniones de estilo CSS*/
 /* DEFINICIONES PARA LISTA EN VENTANA 1*/
 .profesionLista{
-	font-size: 12px;
-	margin-top: 30px;
-	color: rgb(192,192,192);
+	font-size: 13px;
+	margin-top: 10px;
+	color: rgb(255,117,020);
 }
 /* DEFINICIONES PARA DETALLES DE USUARIO EN VENTANA 2*/
 .profesion{
 	font-size: 12px;
-	margin-top: 10px;
+	margin-top: 5px;
 	color: rgb(192,192,192);
 }
 .poblacion{
 	font-size: 12px;
-	margin-top: 10px;
+	margin-top: 5px;
 	color: rgb(192,192,192);
 }
 .edad{
 	font-size: 12px;
-	margin-top: 10px;
+	margin-top: 5px;
 	color: rgb(192,192,192);
 }
 
@@ -38,4 +38,14 @@
 	font-size: 12px;
 	margin-top: 10px;
 	color: rgb(192,192,192);
+}
+
+.imagenLista{
+	margin-top: 5px;
+	margin-left: 5px
+}
+
+.imagen{
+	margin-top: 15px;
+	margin-left: 10px;
 }
