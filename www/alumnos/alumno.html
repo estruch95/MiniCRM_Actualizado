@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- CSS THEMEROLLER -->
+        <link rel="stylesheet" href="jquery/OrangeTheme.min.css" />
+        <link rel="stylesheet" href="jquery/jquery.mobile.icons.min.css" />
+        <!-- CSS JQUERY -->
+        <link rel="stylesheet" href="jquery/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/elementos.css" />
+        <title>Detalles alumno</title>
+    </head>
+    <body>
+    <!-- VENTANA2 (INFORMACIÓN DE ADRIAN) -->
+    <div data-role="page" id="detalles">
+
+        <div data-role="header">
+            <h1>DETALLES</h1>
+        </div>
+
+              <div data-role="main" class="ui-content" id="listaDetalles">
+                    <font color="BLACK"></font>
+                        <ul data-role="listview" data-inset="true">
+                              
+                              <li><img src="../img/user.png" class="imagen">
+                                <div class="nombre"><b>Adrian Rodriguez</b></div>
+                                <div class="profesion">Alumno</div>
+                                <div class="poblacion">Albal</div>
+                                <div class="edad">20 años</div>
+                              </li>
+                              
+                              <li><div><b>Uso de herramientas TIC</b></div><div class="herramientasTic">Usa Gmail, drive...</div></li>
+                              
+                              <li><img src="../img/correo.jpeg" align="right" class="imagenCorreo"><div><b>Correo</b></div><div class="correo">rodriguez@hotmail.es</div></li>
+                              
+                              <li><img src="../img/telf.png" align="right" class="imagenTelf"><div><b>Telefono</b></div><div class="telefono">+34 786354896</div></li>
+                              
+                        </ul><br><br>
+                        <a href= "../contactos.html">Atras</a>&nbsp&nbsp&nbsp<a href= "../nuevaEncuesta.html">Nueva encuesta</a>  
+              </div>
+        </div>
+          <!-- JQUERY MOBILE (LINKADOS DE JAVASCRIPT)-->
+          <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+          <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
+
+          <script type="text/javascript" src="cordova.js"></script>
+          <script type="text/javascript" src="js/index.js"></script>
+          <!-- LLAMAMOS A LA FUNCIÓN DE CARGA DE LOS REGISTROS DE LA BBDD -->
+          <script type="text/javascript">cargarDB.initialize();</script>
+    </body>
+</html>

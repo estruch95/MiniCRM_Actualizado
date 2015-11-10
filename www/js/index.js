@@ -45,7 +45,7 @@ var cargarDB = {
                         //Aquí actualizaría mi html automáticamente para cargar datos de la BBDD
                         console.log("ROW "+i+" nombre: "+fila.nombre);
                         //REVISAR LA RECUPERACIÓN DE DATOS (ALGO FALLA)
-                        
+                        $("#listaContactos ul").append("<li><a href='./alumnos/alumno.html'><img src='./img/user.png' class='imagenLista'><div class='nombreLista'>"+fila.nombre+" "+fila.apellidos+"</div><div class='profesionLista'>"+fila.cargo+"</div></a></li>").listview('refresh');
                     }
                 }
             },
@@ -98,30 +98,33 @@ var confDB = {
                   "nombre       VARCHAR(50)     not null,"+
                   "apellidos    VARCHAR(250)    not null,"+
                   "cargo        VARCHAR(250)    not null,"+
-                  "email        VARCHAR(250)    not null );"
+                  "email        VARCHAR(250)    not null,"+
+                  "edad         INTEGER         not null,"+
+                  "telefono     VARCHAR(250)    not null,"+
+                  "poblacion    VARCHAR(250)    not null );";
             ;
             tx.executeSql(sql);
             console.log("TABLA CREADA CORRECTAMENTE");
 
             //Inserción de datos en la tabla creada anteriormente
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email)"+
-                  "VALUES(1, 'Ivan', 'Estruch', 'Alumno', 'estruch95.b@gmail.com')";
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+                  "VALUES(1, 'Ivan', 'Estruch', 'Alumno', 'estruch95.b@gmail.com', 20, '695391923', 'Benifaio')";
             tx.executeSql(sql);
 
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email)"+
-                  "VALUES(2, 'Joaquin', 'Bahamonde', 'Alumno', 'joaco17@gmail.com')";
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+                  "VALUES(2, 'Joaquin', 'Bahamonde', 'Alumno', 'joaco17@gmail.com', 20, '657345698', 'Catarroja')";
             tx.executeSql(sql);
 
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email)"+
-                  "VALUES(3, 'Jose', 'Igualada', 'Alumno', 'igualada94@hotmail.com')";
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+                  "VALUES(3, 'Jose', 'Igualada', 'Alumno', 'igualada94@hotmail.com', 21, '637567834', 'Torrent')";
             tx.executeSql(sql);
 
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email)"+
-                  "VALUES(4, 'Adrian', 'Rodriguez', 'Alumno', 'rodri@hotmail.es')";
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+                  "VALUES(4, 'Adrian', 'Rodriguez', 'Alumno', 'rodri@hotmail.es', 22, '435678998', 'Albal')";
             tx.executeSql(sql);
 
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email)"+
-                  "VALUES(5, 'Silvia', 'Reolid', 'Alumno', 'silreolid@gmail.es')";
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+                  "VALUES(5, 'Silvia', 'Reolid', 'Alumno', 'silreolid@gmail.es', 25, '961782345', 'Valencia')";
             tx.executeSql(sql);
             console.log("INSERCION DE DATOS REALIZADA CORRECTAMENTE");
     },

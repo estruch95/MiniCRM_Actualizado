@@ -1,6 +1,17 @@
  <html>
     <head>
-       
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- CSS THEMEROLLER -->
+        <link rel="stylesheet" href="jquery/OrangeTheme.min.css" />
+        <link rel="stylesheet" href="jquery/jquery.mobile.icons.min.css" />
+        <!-- CSS JQUERY -->
+        <link rel="stylesheet" href="jquery/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/elementos.css" />
+        <title>Contactos</title>
     </head>
     <body>
     <!-- VENTANA1 (CONTACTOS) -->
@@ -13,7 +24,7 @@
               <div data-role="main" class="ui-content" id="listaContactos">
                         <h2>Contactos de clase</h2>
                         <ul data-role="listview" data-inset="true">
-                        
+                            <!--
                             <li><a href="./alumnos/ivan.html"><img src="./img/user.png" class="imagenLista"><div class="nombreLista">Ivan Estruch</div><div class="profesionLista">Alumno</div></a></li>
 
                             <li><a href="./alumnos/joaquin.html"><img src="./img/user.png" class="imagenLista"><div class="nombreLista">Joaquin Bahamonde</div><div class="profesionLista">Alumno</div></a></li>
@@ -23,10 +34,18 @@
                             <li><a href="./alumnos/silvia.html"><img src="./img/user.png" class="imagenLista"><div class="nombreLista">Silvia Reolid</div><div class="profesionLista">Alumna</div></a></li>
 
                             <li><a href="./alumnos/adrian.html"><img src="./img/user.png" class="imagenLista"><div class="nombreLista">Adrian Rodriguez</div><div class="profesionLista">Alumno</div></a></li>
-                        
+                            -->
                         </ul><br>
               </div>
           </div>
+          <!-- JQUERY MOBILE (LINKADOS DE JAVASCRIPT)-->
+          <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+          <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
+
+          <script type="text/javascript" src="cordova.js"></script>
+          <script type="text/javascript" src="js/index.js"></script>
+          <!-- LLAMAMOS A LA FUNCIÓN DE CARGA DE LOS REGISTROS DE LA BBDD -->
+          <script type="text/javascript">cargarDB.initialize();</script>
     </body>
 </html>
  
