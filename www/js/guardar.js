@@ -1,3 +1,4 @@
+	console.log("ENTRO");
 	var db = "";
 	var nombre = "";
 	var apellidos = "";
@@ -9,7 +10,8 @@
 
 	function insertarDatos(tx){
 		//INSERCIÓN DE VALORES
-		var sql = "INSERT INTO localDB VALUES('"+nombre+"', '"+apellidos+"', '"+cargo+"', '"+email+"', "+edad+", '"+telefono+"', '"+poblacion+"');";
+		var sql = "INSERT INTO localDB(nombre, apellidos, cargo, email, edad, telefono, poblacion)"+ 
+				  "VALUES('"+nombre+"', '"+apellidos+"', '"+cargo+"', '"+email+"', "+edad+", '"+telefono+"', '"+poblacion+"');";
 		//EJECUTAMOS LA SENTENCIA SQL
 		tx.executeSql(sql);
 		console.log("ROW INSERT: "+sql);
@@ -20,16 +22,24 @@
         console.log("MENSAJE DE ERROR "+err.message);
     };
 
-    $("#btnguardar").click(function(event){
+   	$("#guardar").click(function(event){
 		console.log("NUEVO ELEMENTO USUARIO");
-		nombre = $("#nombre").val();
-		apellidos = $("#apellidos").val();
-		cargo = $("#cargo").val();
-		email = $("#email").val();
-		edad = $("#edad").val();
-		telefono = $("#telefono").val();
-		poblacion = $("#poblacion").val();
-		console.log("LLEGOOOOOO");
+		nombre = $("#fnombre").val();
+		apellidos = $("#fapellidos").val();
+		cargo = $("#fcargo").val();
+		email = $("#femail").val();
+		edad = $("#fedad").val();
+		telefono = $("#ftelefono").val();
+		poblacion = $("#fpoblacion").val();
+
+		//COMPROBACIÓN DE LOS DATOS CAPTURADOS DEL FORMULARIO
+		console.log("Nombre: "+nombre);
+		console.log("Apellidos: "+apellidos);
+		console.log("Cargo: "+cargo);
+		console.log("Email: "+email);
+		console.log("Edad: "+edad);
+		console.log("Telefono: "+telefono);
+		console.log("Poblacion: "+poblacion);
 
 		//CONEXIÓN CON BBDD
 		db = window.openDatabase("localDB", "1.0", "Base de datos de prueba", 2*1024*1024);

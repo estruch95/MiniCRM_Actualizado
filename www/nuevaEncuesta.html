@@ -1,78 +1,74 @@
 <html>
-    <head>
+  <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
-       
+
         <!-- CSS THEMEROLLER -->
         <link rel="stylesheet" href="jquery/OrangeTheme.min.css" />
         <link rel="stylesheet" href="jquery/jquery.mobile.icons.min.css" />
         <!-- CSS JQUERY -->
         <link rel="stylesheet" href="jquery/jquery.mobile.structure-1.4.5.min.css" />
         <link rel="stylesheet" href="css/elementos.css" />
-        <!-- TITULO-->
-        <title>Encuesta DAM</title>
-    </head>
-    <body>
-    <!-- VENTANA3 (NUEVA ENCUESTA) -->
-        <div data-role="page" id="nuevaEncuesta">
+        <title>Nueva encuesta</title>
+  </head>
+
+  <body>
+        <div data-role="page" id="nuevoUsuario">
 
             <div data-role="header">
-                <h1>NUEVA ENCUESTA</h1>
+                <h1><font size="4" face="Verdana">Nuevo Usuario</font></h1>
             </div>
 
-            <div data-role="main" class="ui-content">
-                <font color="BLACK"><p><b>CONTENIDO</b></p></font>
-                <img src="./img/user.png" class="imagenNuevaEncuesta">
-                <form method="post" action="demoform.asp">
+            <div data-role="main">
+                <div class="ui-content">
+                    <font color="BLACK"><p><b>CONTENIDO</b></p></font>
+                    <img id="perfil" src="img/user.png" width="100px" height="100px">
+                </div>
+
+                <div data-role="main" class="ui-content" id="formulario">
                       <div class="ui-field-contain">
 
-                          <label for="nombre"><b>Nombre:</b></label>
-                          <input type="text" name="nombre" id="nombre" placeholder="Tu nombre...">
+                          <label for="fnombre"><b>Nombre:</b></label>
+                          <input type="text" name="fnombre" id="fnombre" placeholder="Tu nombre..."> 
 
-                          <label for="apellidos"><b>Apellidos:</b></label>
-                          <input type="text" name="apellidos" id="apellidos" placeholder="Tus apellidos...">  
+                          <label for="fapellidos"><b>Apellidos</b></label>
+                          <input type="text" name="fapellidos" id="fapellidos" placeholder="Tus apellidos...">
 
-                          <label for="cargo:"><b>Cargo:</b></label>
-                          <input type="text" name="cargo" id="cargo" placeholder="Tu cargo...">
+                          <label for="fcargo"><b>Cargo:</b></label>
+                          <input type="text" name="fcargo" id="fcargo" placeholder="Tu cargo...">
 
-                          <label for="email:"><b>Email:</b></label>
-                          <input type="text" name="email" id="email" placeholder="Tu email...">
+                          <label for="femail"><b>Email:</b></label>
+                          <input type="text" name="femail" id="femail" placeholder="Tu email...">
 
-                          <label for="edad:"><b>Edad:</b></label>
-                          <input type="text" name="edad" id="edad" placeholder="Tu edad...">
+                          <label for="fedad"><b>Edad:</b></label>
+                          <input type="text" name="fedad" id="fedad" placeholder="Tu edad...">
 
-                          <label for="telefono"><b>Telefono:</b></label>
-                          <input type="text" name="telefono" id="telefono" placeholder="Tu telefono...">
+                          <label for="ftelefono"><b>Telefono:</b></label>
+                          <input type="text" name="ftelefono" id="ftelefono" placeholder="Tu telefono...">
 
-                           <label for="poblacion"><b>Poblacion:</b></label>
-                          <input type="text" name="poblacion" id="poblacion" placeholder="Tu pueblo...">
-                      </div><br>
+                          <label for="fpoblacion"><b>Poblacion:</b></label>
+                          <input type="text" name="fpoblacion" id="fpoblacion" placeholder="Poblacion...">
+                      
+                      </div>
+                      <a href="contactos.html" data-ajax="false" class="ui-btn">Volver a contactos</a>
+                </div>
 
-                      <fieldset data-role="controlgroup">
+                 <div data-role="footer">
 
-                            <label for="gmail">Gmail</label>
-                            <input type="checkbox" name="gmail" id="gmail" value="gmail">
+                    <h2><div class="altoFooter" id="guardar"><a href="contactos.html" data-ajax="false"><img src="img/guardar.png"  align="middle|top"/></h2></a>
 
-                            <label for="twitter">Twitter</label>
-                            <input type="checkbox" name="twitter" id="twitter" value="twitter">
-                            
-                    </fieldset>
-            </div>
-
-            <div data-role="main" class="ui-content" id="btnguardar">
-                  <a href="contactos.html" class="ui-btn" data-ajax="false">Guardar</a>
-            </div>
-
+                 </div>
         </div>
 
-
-         <!-- JQUERY MOBILE (LINKADOS DE JAVASCRIPT)-->
+        <!-- LIBRERIA jQuery  -->
         <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+        <script src="jquery/jquery-1.11.3.min.js"></script>
+        <!-- LIBRERIA jQuery mobile  -->
         <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
-
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/guardar.js"></script>
-    </body>
+</body>
 </html>
+
  
